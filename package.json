@@ -1,0 +1,26 @@
+{
+  "name": "design-conference",
+  "version": "1.0.0",
+  "description": "As web designers and front-end developers, we have\r the luxury of attending a number of great conferences\r dedicated to our craft. We're going to make up our own\r conference, Design Conference, and build a website for\r it throughout my lessons at MidroHub Academy. Here\r we go!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/warythebutterfly/design-conference.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/warythebutterfly/design-conference/issues"
+  },
+  "homepage": "https://github.com/warythebutterfly/design-conference#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.20"
+  }
+}
