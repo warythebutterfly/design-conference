@@ -216,8 +216,8 @@ body {
 .row-alt {
   background: #cbe2c1;
   background: -webkit-linear-gradient(to right, #a1d3b0, #f6f1d3);
-  background:    -moz-linear-gradient(to right, #a1d3b0, #f6f1d3);
-  background:         linear-gradient(to right, #a1d3b0, #f6f1d3);
+  background: -moz-linear-gradient(to right, #a1d3b0, #f6f1d3);
+  background: linear-gradient(to right, #a1d3b0, #f6f1d3);
   padding: 44px 0 22px 0;
 }
 
@@ -338,11 +338,20 @@ p a {
   padding: 10px 30px;
 }
 
-
-
 .btn-alt:hover {
   background: #fff;
   color: #648880;
+}
+
+.btn-default{
+  border: 0;
+  background: #648880;
+  padding:  11px 30px;
+  font-size: 14px;
+}
+
+.btn-default:hover{
+  background: #77a198;
 }
 
 /*
@@ -400,7 +409,7 @@ p a {
   text-align: right;
 }
 
-.nav li{
+.nav li {
   display: inline-block;
   margin: 0 10px;
   vertical-align: top;
@@ -435,7 +444,7 @@ p a {
   color: #a9b2b9;
 }
 
-.teaser img{
+.teaser img {
   border-radius: 5px;
   display: block;
   margin-bottom: 22px;
@@ -457,13 +466,13 @@ p a {
 }
 
 .speaker-info img {
-  border-radius: 50%; 
+  border-radius: 50%;
   height: 130px;
   margin: -66px 0 22px 0;
   vertical-align: top;
 }
 
-.speaker{
+.speaker {
   margin-bottom: 44px;
 }
 
@@ -483,3 +492,55 @@ p a {
   height: 264px;
 }
 
+/*
+  ========================================
+  Register
+  ========================================
+*/
+
+.why-attend {
+  list-style: disc;
+  margin: 0 0 22px 30px;
+}
+
+form {
+  margin-bottom: 22px;
+}
+
+input,
+select,
+textarea {
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
+
+.register-group label {
+  color: #648880;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.register-group input,
+.register-group select,
+.register-group textarea {
+  border: 1px solid #c6c9cc;
+  border-radius: 5px;
+  color: #888;
+  display: block;
+  margin: 5px 0 27px 0;
+  padding: 5px 8px;
+}
+
+.register-group input,
+.register-group textarea {
+  width: 100%;
+}
+
+.register-group select {
+  height: 34px;
+  width: 60px;
+}
+
+.register-group textarea {
+  height: 78px;
+}
