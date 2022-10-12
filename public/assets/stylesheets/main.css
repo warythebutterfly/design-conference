@@ -162,13 +162,11 @@ body {
   padding-right: 30px;
 }
 .grid,
-.col-1-2,
 .col-1-3,
 .col-2-3 {
   padding-left: 15px;
   padding-right: 15px;
 }
-.col-1-2,
 .col-1-3,
 .col-2-3 {
   display: inline-block;
@@ -179,9 +177,6 @@ body {
 }
 .col-2-3 {
   width: 66.66%;
-}
-.col-1-2 {
-  width: 50%;
 }
 
 /*
