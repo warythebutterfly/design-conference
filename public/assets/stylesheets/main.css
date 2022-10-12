@@ -162,11 +162,13 @@ body {
   padding-right: 30px;
 }
 .grid,
+.col-1-2,
 .col-1-3,
 .col-2-3 {
   padding-left: 15px;
   padding-right: 15px;
 }
+.col-1-2,
 .col-1-3,
 .col-2-3 {
   display: inline-block;
@@ -177,6 +179,9 @@ body {
 }
 .col-2-3 {
   width: 66.66%;
+}
+.col-1-2 {
+  width: 50%;
 }
 
 /*
@@ -343,14 +348,14 @@ p a {
   color: #648880;
 }
 
-.btn-default{
+.btn-default {
   border: 0;
   background: #648880;
-  padding:  11px 30px;
+  padding: 11px 30px;
   font-size: 14px;
 }
 
-.btn-default:hover{
+.btn-default:hover {
   background: #77a198;
 }
 
@@ -543,4 +548,30 @@ textarea {
 
 .register-group textarea {
   height: 78px;
+}
+
+/*
+  ========================================
+  Alert Message
+  ========================================
+*/
+
+.alert {
+  background: #648880;
+  border: 2px solid #648880;
+  border-radius: 5px;
+  color: #fff;
+  padding: 5px 10px 0px 15px;
+  margin-bottom: 20px;
+}
+
+.alert button {
+  border: 1px solid #648880;
+  color: #648880;
+  float: right;
+  font-size: xx-small;
+}
+
+.alert p {
+  padding-top: 15px;
 }

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- head -->
+  <!-- Head -->
   <%- include('partials/head.ejs') %>
 
   <body>
-    <!-- header -->
+    <!-- Header -->
     <%- include('partials/header.ejs') %>
 
     <!-- Main content -->
@@ -36,7 +36,16 @@
             <li>October in Lagos is simply amazing</li>
           </ul>
         </section><!--
-        --><form class="col-1-3" action="#" method="post">
+        --><form class="col-1-3" action="/register" method="post">
+          <!-- Alert Message -->
+          <% if(message) { %>
+            <div class="alert" id="alertMessage">
+              <button class="btn" id="cancel">x</button>
+              <p><%= message %></p>
+            </div>
+          <%}%>
+          
+
           <fieldset class="register-group">
             <label>
               Name
@@ -71,4 +80,5 @@
     <!-- Footer -->
     <%- include('partials/footer.ejs') %>
   </body>
+  <script src="assets/scripts/main.js"></script>
 </html>

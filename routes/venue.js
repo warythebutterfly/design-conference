@@ -1,9 +1,9 @@
-const express = require("express")
-const app = express.Router()
+const express = require("express");
+const app = express.Router();
 
 //call for the main venue page
 app.get("/", (req, res) => {
-    res.render("venue")
-})
+  res.render("venue");
+});
 
-module.exports = app
+module.exports = app;
