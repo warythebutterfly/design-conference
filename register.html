@@ -62,18 +62,25 @@
           </ul>
         </section><!--
         --><form class="col-1-3" action="#" method="post">
+             <!-- Alert Message -->
+             
+              <div class="alert" id="alertMessage">
+                <button class="btn" id="cancel">x</button>
+                <p>Success! Please check your mail for your digital ticket.</p>
+              </div>
+         
           <fieldset class="register-group">
             <label>
               Name
-              <input type="text" name="name" placeholder="Full name" required>
+              <input type="text" name="name" id="name" placeholder="Full name" required>
             </label>
             <label>
               Email
-              <input type="email" name="email" placeholder="Email address" required>
+              <input type="email" name="email" id="email" placeholder="Email address" required>
             </label>
             <label>
               Number of Passes
-              <select name="quantity" required>
+              <select name="quantity" id="quantity" required>
                 <option value="1" selected>1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -84,10 +91,10 @@
 
             <label>
               Comments
-              <textarea name="comments"></textarea>
+              <textarea id="comments" name="comments"></textarea>
             </label>
           </fieldset>
-          <input type="submit" class="btn btn-default" name="submit" value="Purchase">
+          <input type="submit" class="btn btn-default" name="submit" value="Purchase" id="submit">
         </form>
        
       </div>
@@ -109,4 +116,5 @@
       </nav>
     </footer>
   </body>
+  <script src="assets/scripts/main.js"></script>
 </html>
