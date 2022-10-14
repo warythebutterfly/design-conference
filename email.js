@@ -1,26 +1,28 @@
-const nodemailer = require("nodemailer")
-const dotenv = require("dotenv")
+const nodemailer = require("nodemailer");
+const dotenv = require("dotenv");
 
-dotenv.config()
+dotenv.config();
 
 function sendMail(mailOptions) {
-    //creating node mailer transporter
-    const transporter = nodemailer.createTransport({
-        service: "gmail",
-        auth: {
-            user: process.env.GMAIL_USER,
-            pass: process.env.GMAIL_PASSWORD
-        }
-    })
+  //creating node mailer transporter
 
-    transporter.sendMail(mailOptions, (err, info) => {
-        if (err) {
-            console.log(err)
-        }
-        else {
-            console.log(info.response)
-        }
-    })
+  const transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      user: process.env.GMAIL_USER,
+      pass: process.env.GMAIL_PASSWORD,
+    },
+  });
+
+  transporter.sendMail(mailOptions, (err, info) => {
+    if (err) {
+      console.log(err.message);
+      return "error";
+    } else {
+      console.log(info.response);
+      return "success";
+    }
+  });
 }
 
-module.exports = sendMail
+module.exports = sendMail;
