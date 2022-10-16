@@ -5,6 +5,7 @@ const register = require("./routes/register");
 const schedule = require("./routes/schedule");
 const speakers = require("./routes/speakers");
 const venue = require("./routes/venue");
+const attendees = require("./routes/attendees");
 
 const app = express();
 const PORT = 3000;
@@ -21,6 +22,7 @@ app.use("/register", register);
 app.use("/schedule", schedule);
 app.use("/speakers", speakers);
 app.use("/venue", venue);
+app.use("/attendees", attendees);
 
 app.listen(PORT, () => {
   console.log(`server running at http://localhost:${PORT}`);

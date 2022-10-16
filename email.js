@@ -14,19 +14,12 @@ function sendMail(mailOptions) {
     },
   });
 
-  let response;
-
-  transporter.sendMail(mailOptions, (err, info) => {
-    if (err) {
-      console.log(err.message);
-      response = "error";
-    } else {
-      console.log(info.response);
-      response = "success";
-    }
-  });
-
-  return response;
+  try {
+    transporter.sendMail(mailOptions);
+    return true;
+  } catch (error) {
+    return false;
+  }
 }
 
 module.exports = sendMail;

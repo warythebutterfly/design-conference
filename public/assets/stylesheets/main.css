@@ -599,11 +599,9 @@ td {
 th {
   padding-right: 45px;
   text-align: right;
-  width: 205;
+  width: 20%;
 }
-td {
-  width: 40%;
-}
+
 thead {
   line-height: 44px;
 }
@@ -643,3 +641,59 @@ tbody td:only-of-type {
   color: #a9b2b9;
 }
 
+/*
+  ========================================
+  Attendees
+  ========================================
+*/
+
+.attendees {
+  margin-bottom: 44px;
+  width: 100%;
+}
+
+.attendees:last-child {
+  margin-bottom: 0;
+}
+
+.attendees thead th {
+  background: #293f50;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  text-align: center;
+  line-height: 22px;
+}
+
+.attendees tbody td {
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.attendees thead th:first-child {
+  border-top-left-radius: 5px;
+}
+.attendees thead th:last-child {
+  border-top-right-radius: 5px;
+}
+
+.attendees thead th:first-child,
+.attendees tbody td:first-child,
+.attendees tbody td:last-child {
+  text-align: left;
+}
+
+.attendees thead th:first-child,
+.attendees thead td:first-child {
+  width: 5%;
+}
+
+.attendees thead th:last-child,
+.attendees tbody td:last-child {
+  width: 40%;
+}
+
+.attendees tbody td {
+  border-bottom: 1px solid #cecfd5;
+}
