@@ -42,8 +42,7 @@ app.post("/", (req, res) => {
       });
     } else {
       res.render("register", {
-        message:
-          "Oops! An error ocurred while trying to process your digital ticket. Please contact support.",
+        message: "Oops! An error ocurred while trying to process your digital ticket. Please contact support.",
       });
     }
   } catch (error) {
