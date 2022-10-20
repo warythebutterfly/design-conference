@@ -33,38 +33,36 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>1</td>
-              <td>Temitoyosi Osibemekun</td>
-              <td>
-                <a href="mailto:temitoyosi@gmail.com">temitoyosi@gmail.com</a>
-              </td>
-              <td>Sounds AMAZING!! Can't wait to attend!</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Temitoyosi Osibemekun</td>
-              <td>
-                <a href="mailto:temitoyosi@gmail.com">temitoyosi@gmail.com</a>
-              </td>
-              <td>Can't wait!</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Temitoyosi Osibemekun</td>
-              <td>
-                <a href="mailto:temitoyosi@gmail.com">temitoyosi@gmail.com</a>
-              </td>
-              <td>Can't wait!</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Temitoyosi Osibemekun</td>
-              <td>
-                <a href="mailto:temitoyosi@gmail.com">temitoyosi@gmail.com</a>
-              </td>
-              <td>Can't wait!</td>
-            </tr>
+            <% if(attendees.length) { for( let i = 0; i < attendees.length; i++) { %>
+              <tr>
+                <td>
+                  <%= (i + 1) %>
+                </td>
+                <td>
+                  <%= attendees[i].name %>
+                </td>
+                <td>
+                  <%= attendees[i].email %>
+                </td>
+                <td>
+                  <%= attendees[i].comments %>
+                </td>
+              </tr>
+              <% } } else { %>
+                <tr>
+                  <td>
+                    No User
+                  </td>
+                </tr>
+                <% } %>
+            <!-- <% attendees.forEach( function(attendee, index){ %>
+              <tr>
+                  <td> <%= index+1 %> </th>
+                  <td><%= attendee.name %></td>
+                  <td><%= attendee.email %></td>
+                  <td><%= attendee.comments %></td>
+              </tr>
+              <% }); %> -->
           </tbody>
         </table>
       </div>
